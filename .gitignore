@@ -1,0 +1,9 @@
+# running locally
+/builddir/
+__pycache__/
+
+# translation template
+/po/yaiden.pot
+
+# IDE (funny, I know)
+/.vscode

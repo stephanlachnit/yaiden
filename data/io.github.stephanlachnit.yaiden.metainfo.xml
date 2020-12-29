@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>io.github.stephanlachnit.yaiden</id>
+
+    <name>Yaiden</name>
+    <summary>Terminal focused Gtk based IDE</summary>
+
+    <launchable type="desktop-id">io.github.stephanlachnit.yaiden.desktop</launchable>
+
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>EUPL-1.2</project_license>
+    <developer_name translatable="no">Stephan Lachnit</developer_name>
+    <url type="homepage">https://github.com/stephanlachnit/yaiden</url>
+    <url type="bugtracker">https://github.com/stephanlachnit/yaiden/issues</url>
+    <content_rating type="oars-1.1" />
+
+    <description>
+        <p>Yaiden is the IDE that puts the terminal in its focus, letting you focus on your work.</p>
+        <p>Yaiden is still a WIP and lacks a lot of features.</p>
+        <p>Clean UI: thanks to the Gtk implementation, Yaiden has a high content-to-screen ratio.</p>
+        <p>Lightweight: offloads almost everything to GtkSource, keeping the implementation small.</p>
+        <p>No-Annoyance: no notifications asking for your feedback or recommending you extensions.</p>
+    </description>
+    <screenshots>
+        <screenshot type="default">
+            <caption>Main Window</caption>
+            <image>https://raw.githubusercontent.com/stephanlachnit/yaiden/v1/docs/screenshot.png</image>
+        </screenshot>
+    </screenshots>
+
+    <releases>
+        <release version="v1" date="2020-12-29" />
+    </releases>
+</component>

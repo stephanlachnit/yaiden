@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+
+Name=Yaiden
+Comment=Terminal focused Gtk based IDE
+Categories=Development;IDE;
+Keywords=Editor;
+
+Icon=io.github.stephanlachnit.yaiden
+Exec=yaiden
+Terminal=false

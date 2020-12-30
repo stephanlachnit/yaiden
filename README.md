@@ -26,7 +26,7 @@ I don't have big plans for Yaiden (yet), it's just a side project I do for fun t
 ### Running
 `gir1.2-gtk-3.0 gir1.2-glib-2.0 gir1.2-handy-1 gir1.2-gtksource-4 gir1.2-vte-2.91 gir1.2-gdkpixbuf-2.0 adwaita-icon-theme`
 ### Testing
-`flake8 pylint desktop-file-utils`
+`flake8 pylint python3-enchant apsell desktop-file-utils`
 
 ## License
 This project is licensed under the rather unknown European Union Public License 1.2, a license from the European Commission which is comparable to the AGPL but with linking freedom. It has been officially translated to 23 languages and is OSI and FSF approved.

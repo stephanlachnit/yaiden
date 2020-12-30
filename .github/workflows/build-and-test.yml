@@ -13,7 +13,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt upgrade -y
-          sudo apt install meson gettext appstream flake8 pylint desktop-file-utils
+          sudo apt install meson gettext appstream flake8 pylint python3-enchant aspell desktop-file-utils
       - name: Install
         run: |
           meson builddir

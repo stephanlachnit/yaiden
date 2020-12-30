@@ -9,7 +9,7 @@ class FileOpener():
     def __init__(self):
         self.__dict__ = FileOpener.__monostate
 
-    def construct_widget(self):
+    def construct_widget(self, _file_path):
         pass
 
     def set_notebook(self, notebook):

@@ -2,7 +2,7 @@ from gi.repository import Gtk
 
 from ..file_opener import FileOpener
 from .editor_notebook import Notebook
-from .editor_tab_source_view import TabSourceView
+from .editor_tab_source_view import TabSourceViewOverlay
 from .editor_terminal import TerminalRevealer
 
 
@@ -25,4 +25,4 @@ class Editor(Gtk.VPaned):
         # file opener
         file_opener = FileOpener()
         file_opener.set_notebook(self.notebook)
-        file_opener.set_opening_widget_constructor(TabSourceView.new)
+        file_opener.set_opening_widget_constructor(TabSourceViewOverlay.new)

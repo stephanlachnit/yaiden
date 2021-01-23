@@ -1,19 +1,25 @@
-# generated on 2020-12-27T18:20:07+00:00
+# generated on 2021-01-23T22:51:23+00:00
+#
+# SPDX-FileCopyrightText: 2020-2021 Stephan Lachnit <stephanlachnit@protonmail.com>
+#
+# SPDX-License-Identifier: CC0-1.0
 
 data/io.github.stephanlachnit.yaiden.desktop
 data/io.github.stephanlachnit.yaiden.metainfo.xml
 
 yaiden/__init__.py
 yaiden/application.py
+yaiden/file_opener.py
 yaiden/ui_classes/__init__.py
 yaiden/ui_classes/about_dialog.py
 yaiden/ui_classes/editor.py
+yaiden/ui_classes/editor_notebook.py
 yaiden/ui_classes/editor_tab_source_view.py
 yaiden/ui_classes/editor_terminal.py
 yaiden/ui_classes/header_bar.py
 yaiden/ui_classes/header_bar_menu.py
 yaiden/ui_classes/main_window.py
 yaiden/ui_classes/preferences_window.py
+yaiden/ui_classes/sidebar.py
 yaiden/ui_classes/sidebar_item_file_tree.py
-yaiden/ui_classes/sidebar_stack.py
-yaiden/ui_classes/sidebar_toolbar.py
+yaiden/ui_classes/toolbar.py

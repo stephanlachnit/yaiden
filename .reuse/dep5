@@ -3,15 +3,10 @@ Upstream-Name: yaiden
 Upstream-Contact: Stephan Lachnit <stephanlachnit@protonmail.com>
 Source: https://github.com/stephanlachnit/yaiden
 
-Files: .editorconfig
-       .flake8
-       .gitignore
-       .pylintrc
-       meson.build
-       README.md
+Files: meson.build
+       po/meson.build
        data/*
        docs/*
-       po/*
 Copyright: 2020 Stephan Lachnit <stephanlachnit@protonmail.com>
 License: CC0-1.0
 

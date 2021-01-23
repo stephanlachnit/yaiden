@@ -1,4 +1,4 @@
-from gettext import dgettext
+from gettext import gettext as _
 
 from gi.repository import Gtk
 
@@ -12,14 +12,12 @@ class MenuButton(Gtk.MenuButton):
 
         # preferences window
         self.menu_preferences = Gtk.MenuItem()
-        self.menu_preferences.set_use_underline(True)
-        self.menu_preferences.set_label(dgettext('gtk30', '_Preferences'))  # TODO: gtk40
+        self.menu_preferences.set_label(_('Preferences'))
         self.menu_preferences.connect('activate', PreferencesWindow.show_from_widget)
 
         # about dialog
         self.menu_about = Gtk.MenuItem()
-        self.menu_about.set_use_underline(True)
-        self.menu_about.set_label(dgettext('gtk30', '_About'))  # TODO: gtk40
+        self.menu_about.set_label(_('About'))
         self.menu_about.connect('activate', AboutDialog.show_from_widget)
 
         # populate and show menu

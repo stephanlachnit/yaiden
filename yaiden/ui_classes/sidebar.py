@@ -1,6 +1,6 @@
 from gi.repository import Gtk
 
-from yaiden.ui_classes.sidebar_item_file_tree import FileTree
+from .sidebar_item_file_tree import FileTree
 
 
 class Sidebar(Gtk.Revealer):

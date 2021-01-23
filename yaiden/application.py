@@ -2,7 +2,7 @@ from gettext import gettext as _
 
 from gi.repository import Gtk, GLib
 
-from yaiden.ui_classes.main_window import MainWindow
+from .ui_classes.main_window import MainWindow
 
 
 class Application(Gtk.Application):

@@ -3,7 +3,7 @@ from operator import itemgetter
 
 from gi.repository import Gtk, GdkPixbuf
 
-from yaiden.file_opener import FileOpener
+from ..file_opener import FileOpener
 
 
 class FileTree(Gtk.ScrolledWindow):

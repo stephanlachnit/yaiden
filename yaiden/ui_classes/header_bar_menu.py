@@ -2,8 +2,8 @@ from gettext import dgettext
 
 from gi.repository import Gtk
 
-from yaiden.ui_classes.preferences_window import PreferencesWindow
-from yaiden.ui_classes.about_dialog import AboutDialog
+from .preferences_window import PreferencesWindow
+from .about_dialog import AboutDialog
 
 
 class MenuButton(Gtk.MenuButton):

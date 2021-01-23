@@ -1,9 +1,9 @@
 from gi.repository import Gtk
 
-from yaiden.ui_classes.header_bar import HeaderBar
-from yaiden.ui_classes.toolbar import Toolbar
-from yaiden.ui_classes.sidebar import Sidebar
-from yaiden.ui_classes.editor import Editor
+from .header_bar import HeaderBar
+from .toolbar import Toolbar
+from .sidebar import Sidebar
+from .editor import Editor
 
 
 class MainWindow(Gtk.ApplicationWindow):

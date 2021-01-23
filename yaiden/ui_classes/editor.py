@@ -1,9 +1,9 @@
 from gi.repository import Gtk
 
-from yaiden.file_opener import FileOpener
-from yaiden.ui_classes.editor_notebook import Notebook
-from yaiden.ui_classes.editor_tab_source_view import TabSourceView
-from yaiden.ui_classes.editor_terminal import TerminalRevealer
+from ..file_opener import FileOpener
+from .editor_notebook import Notebook
+from .editor_tab_source_view import TabSourceView
+from .editor_terminal import TerminalRevealer
 
 
 class Editor(Gtk.VPaned):

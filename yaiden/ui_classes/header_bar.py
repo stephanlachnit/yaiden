@@ -2,7 +2,7 @@ from gettext import dgettext
 
 from gi.repository import Gtk
 
-from yaiden.ui_classes.header_bar_menu import MenuButton
+from .header_bar_menu import MenuButton
 
 
 class HeaderBar(Gtk.HeaderBar):

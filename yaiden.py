@@ -15,7 +15,7 @@ gi.require_version('Gio', '2.0')
 gi.require_version('Vte', '2.91')
 gi.require_version('GdkPixbuf', '2.0')
 
-from yaiden import application # pylint: disable=wrong-import-position
+from yaiden import application  # pylint: disable=wrong-import-position # noqa
 
 
 if __name__ == '__main__':

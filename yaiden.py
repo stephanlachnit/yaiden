@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import sys
+
 import gi
 gi.require_version('Gtk', '3.0')  # TODO: move to Gtk4
 gi.require_version('GLib', '2.0')
@@ -9,16 +11,10 @@ gi.require_version('Gio', '2.0')
 gi.require_version('Vte', '2.91')
 gi.require_version('GdkPixbuf', '2.0')
 
-
-def main():
-    # pylint: disable=import-outside-toplevel,no-name-in-module
-    import sys
-    from yaiden.application import Application
-
-    app = Application()
-    ret = app.run(sys.argv)
-    sys.exit(ret)
+from yaiden import application # pylint: disable=wrong-import-position
 
 
 if __name__ == '__main__':
-    main()
+    app = application.Application()
+    ret = app.run(sys.argv)
+    sys.exit(ret)

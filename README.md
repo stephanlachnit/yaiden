@@ -30,7 +30,7 @@ I don't have big plans for Yaiden (yet), it's just a side project I do for fun t
 ### Building
 `meson gettext appstream`
 ### Running
-`gir1.2-gtk-3.0 gir1.2-glib-2.0 gir1.2-handy-1 gir1.2-gtksource-4 gir1.2-vte-2.91 gir1.2-gdkpixbuf-2.0 adwaita-icon-theme`
+`python3-gi gir1.2-gtk-3.0 gir1.2-glib-2.0 gir1.2-handy-1 gir1.2-gtksource-4 gir1.2-vte-2.91 gir1.2-gdkpixbuf-2.0`
 ### Testing
 `flake8 pylint python3-enchant apsell desktop-file-utils`
 

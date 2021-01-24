@@ -3,10 +3,11 @@ Upstream-Name: yaiden
 Upstream-Contact: Stephan Lachnit <stephanlachnit@protonmail.com>
 Source: https://github.com/stephanlachnit/yaiden
 
-Files: meson.build
-       po/meson.build
-       data/*
-       docs/*
+Files:
+ data/io.github.stephanlachnit.yaiden.desktop
+ data/io.github.stephanlachnit.yaiden.metainfo.xml
+ po/POTFILES
+ docs/screenshot.png
 Copyright: 2020 Stephan Lachnit <stephanlachnit@protonmail.com>
 License: CC0-1.0
 

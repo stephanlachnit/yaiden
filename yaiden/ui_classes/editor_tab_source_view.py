@@ -20,11 +20,14 @@ class TabSourceViewOverlay(Gtk.Overlay):
         self.source_view = TabSourceView(file_path)
         self.scrolled_window.add(self.source_view)
 
-        # source view menu button
-        self.menu_button = TabSourceViewMenuButton()
-        self.menu_button.set_halign(Gtk.Align.END)
-        self.menu_button.set_valign(Gtk.Align.END)
-        self.add_overlay(self.menu_button)
+        # source view menu box
+        self.menu_box = TabSourceViewMenuBox()
+        self.menu_box.set_halign(Gtk.Align.END)
+        self.menu_box.set_valign(Gtk.Align.END)
+        self.add_overlay(self.menu_box)
+
+        # connect cursor change
+        self.source_view.get_buffer().connect('notify::cursor-position', self.menu_box.change_line_number)
 
         # show since not initialized with main window
         self.show_all()
@@ -100,12 +103,23 @@ class TabSourceView(GtkSource.View):
         # self.buffer.set_language(lang_mgr.guess_language(self.file_path, None))
 
 
-class TabSourceViewMenuButton(Gtk.MenuButton):
+class TabSourceViewMenuBox(Gtk.Box):
     def __init__(self):
         super().__init__()
 
         # defaults
-        self.set_direction(Gtk.ArrowType.UP)
+        self.set_spacing(8)
+
+        # line column label
+        self.lincol_label = Gtk.Label()
+        self.lincol_label.set_label(f'Line {-1}, Column {-1}')
+        # TODO: background color of label / box
+        self.pack_start(self.lincol_label, False, False, 0)
+
+        # menu button
+        self.menu_button = Gtk.MenuButton()
+        self.menu_button.set_direction(Gtk.ArrowType.UP)
+        self.pack_start(self.menu_button, False, False, 0)
 
         # save button
         self.menu_save = Gtk.MenuItem()
@@ -114,5 +128,9 @@ class TabSourceViewMenuButton(Gtk.MenuButton):
         # populate and show menu
         self.menu = Gtk.Menu()
         self.menu.append(self.menu_save)
-        self.set_popup(self.menu)
+        self.menu_button.set_popup(self.menu)
         self.menu.show_all()
+
+    def change_line_number(self, buffer, _param_spec):
+        text_iter = buffer.get_iter_at_mark(buffer.get_insert())
+        self.lincol_label.set_label(f'Line {text_iter.get_line() + 1}, Column {text_iter.get_line_offset() + 1}')

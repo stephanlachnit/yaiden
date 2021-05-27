@@ -13,23 +13,21 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup Python
         uses: actions/setup-python@v2
-      - name: Setup Meson
+      - name: Install dependencies
         run: |
-          sudo apt update
-          sudo apt upgrade -y
           sudo apt install meson gettext appstream flake8 pylint python3-enchant aspell desktop-file-utils
-      - name: Install
+      - name: Build and install
         run: |
           meson builddir
           ninja -C builddir
           sudo ninja install -C builddir
-      - name: Test
+      - name: Run tests
         run: |
           ninja test -C builddir
       - name: Upload logs
+        if: ${{ always() }}
         uses: actions/upload-artifact@v2
         with:
-          name: Meson logs
+          name: logs
           path: |
-            builddir/meson-logs/meson-log.txt
-            builddir/meson-logs/testlog.txt
+            builddir/meson-logs/

@@ -5,7 +5,7 @@ SPDX-License-Identifier: CC0-1.0
 -->
 
 # Yaiden
-[![GitHub Actions Status](https://github.com/stephanlachnit/yaiden/workflows/Build%20and%20test/badge.svg)](https://github.com/stephanlachnit/yaiden/actions?query=workflow%3A%22Build+and+test%22)
+[![Build and test](https://github.com/stephanlachnit/yaiden/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/stephanlachnit/yaiden/actions/workflows/build-and-test.yml)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/stephanlachnit/yaiden.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/stephanlachnit/yaiden/context:python)
 [![REUSE status](https://api.reuse.software/badge/github.com/stephanlachnit/yaiden)](https://api.reuse.software/info/github.com/stephanlachnit/yaiden)
 ## Terminal focused Gtk based IDE

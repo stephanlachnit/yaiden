@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: yaiden
-Upstream-Contact: Stephan Lachnit <stephanlachnit@protonmail.com>
+Upstream-Contact: Stephan Lachnit <stephanlachnit@debian.org>
 Source: https://github.com/stephanlachnit/yaiden
 
 Files:
@@ -8,9 +8,9 @@ Files:
  data/io.github.stephanlachnit.yaiden.metainfo.xml
  po/POTFILES
  docs/screenshot.png
-Copyright: 2020 Stephan Lachnit <stephanlachnit@protonmail.com>
+Copyright: 2020 Stephan Lachnit <stephanlachnit@debian.org>
 License: CC0-1.0
 
 Files: data/io.github.stephanlachnit.yaiden.svg
-Copyright: 2020 Stephan Lachnit <stephanlachnit@protonmail.com>
+Copyright: 2020 Stephan Lachnit <stephanlachnit@debian.org>
 License: CC-BY-SA-4.0
